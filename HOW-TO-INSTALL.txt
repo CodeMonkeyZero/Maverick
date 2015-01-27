@@ -1,0 +1,37 @@
+**************************************************************************************************
+INSTALLATION INSTRUCTIONS
+**************************************************************************************************
+1) 	MAKE SURE PseudoTV Live and KODI are NOT running.
+
+2) 	COPY THE CONTENTS of the "skin" folder into the root of your PseudoTV Live "custom" folder. 
+		THIS IS GENERALLY LOCATED HERE ON WINDOWS SYSTEMS. 
+		C:\Users\%user name%\AppData\Roaming\kodi\addons\script.pseudotv.live-master\resources\skins\Custom
+
+3) 	Start KODI
+
+4) 	Go into the PseudoTV Live's settings and change the skin PseudoTV Live uses to "Custom." The option
+	to change the skin is the first item located on the "Visual" tab in the program settings.
+
+5) 	Start PseudoTV Live and enjoy the new skin.
+
+THE LOGOPACK FOLDER contains channel white icons optimized for this skin. Copy it some place convenient and 
+set the PseudoTV Live options to use the icons contained within this folder.
+
+**************************************************************************************************
+SHOW YOUR SUPPORT
+**************************************************************************************************
+Buy me (CodeMonkeyZero) a beer. http://tinyurl.com/qdfv6bx
+Buy Lunatixz a beer. http://tinyurl.com/lvs8ngb
+
+**************************************************************************************************
+IF YOU HAVE QUESTIONS or need general support using PseudoTV Live visit the support forums here. 
+http://forum.kodi.tv/showthread.php?tid=169032
+
+*** BE SURE TO READ THE VERY FIRST POST IN THE THREAD. ***
+IT CONTAINS DETAILED INSTRUCTIONS ON INSTALLING AND CONFIGURING PSEUDOTV LIVE.
+
+THE COMMUNITY IS VERY HELPFUL, but you are expected to help yourself or at least help them to help you.
+Asking silly questions that were clearly answered in the directions is severely frowned upon. 
+
+Good luck and enjoy,
+CodeMonkeyZero
