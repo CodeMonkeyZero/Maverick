@@ -20,8 +20,8 @@ set the PseudoTV Live options to use the icons contained within this folder.
 **************************************************************************************************
 SHOW YOUR SUPPORT
 **************************************************************************************************
-Buy me (CodeMonkeyZero) a beer. http://tinyurl.com/qdfv6bx
-Buy Lunatixz a beer. http://tinyurl.com/lvs8ngb
+CodeMonkeyZero, (Quality PTVL Skins) http://tinyurl.com/qdfv6bx
+Lunatixz, (PseudoTV Live Developer) http://tinyurl.com/lvs8ngb
 
 **************************************************************************************************
 IF YOU HAVE QUESTIONS or need general support using PseudoTV Live visit the support forums here. 
