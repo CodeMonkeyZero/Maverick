@@ -419,44 +419,6 @@
          </control>
       </control>
       <!-- // TODAY NEXT AIRED -->
-      <!-- VIDEOWINDOW BOX -->
-      <control type="group" id="523">
-         <!-- NOW PLAYING VIDEO WINDOW LABEL -->
-         <control type="label" id="524">
-            <posx>635</posx>
-            <posy>84</posy>
-            <align>center</align>
-            <width>625</width>
-            <height>360</height>
-            <font>font12</font>
-            <textcolor>C0C0C0C0</textcolor>
-            <label>True</label>
-            <font>font12</font>
-         </control>
-         <!-- #### Skinners Include Everything for videowindow patch to work #### -->
-         <!-- PATCH START -->
-         <!-- <control type="videowindow">
-                <description>video</description>
-				<posx>635</posx>
-				<posy>84</posy> 
-                <width>625</width>
-                <height>360</height>
-                <aspectratio align="center">scale</aspectratio>
-            </control> -->
-         <!-- PATCH END -->
-         <!-- ################################################################## -->
-         <control type="label">
-            <posx>635</posx>
-            <posy>84</posy>
-            <align>center</align>
-            <width>625</width>
-            <height>360</height>
-            <fadetime>250</fadetime>
-            <textcolor>C0C0C0C0</textcolor>
-            <font>font12</font>
-            <label>$INFO[System.Time(hh:mm xx)]</label>
-         </control>
-      </control>
       <!--DATE-->
       <control type="label" id="104">
          <description>DATE LABEL</description>
@@ -798,6 +760,42 @@
             <aspectratio>stretch</aspectratio>
          </control>
       </control>
+      <!-- VIDEOWINDOW BOX -->
+      <control type="group" id="523">
+         <control type="image">
+            <description>INFO BACKGROUND</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>videomask.png</texture>
+            <visible>Control.IsVisible(2)</visible>
+         </control>
+         <control type="label" id="524">
+            <description>VIDEO LABEL</description>
+            <posx>645</posx>
+            <posy>90</posy>
+            <width>600</width>
+            <height>50</height>
+            <align>center</align>
+            <font>font12</font>
+            <textcolor>C0C0C0C0</textcolor>
+            <label>True</label>
+            <visible>Control.IsVisible(2)</visible>
+         </control>
+         <!-- #### Skinners Include Everything for videowindow patch to work #### -->
+         <!-- PATCH START -->
+<!--          <control type="videowindow" id="2">
+            <description>VIDEO</description>
+            <posx>635</posx>
+            <posy>84</posy>
+            <width>650</width>
+            <height>360</height>
+            <aspectratio align="center" aligny="center">scale</aspectratio>
+         </control> -->
+         <!-- PATCH END -->
+         <!-- ################################################################## -->
+      </control>
       <!-- SICK/COUCH/NEW ICONS -->
       <control type="image" id="511">
          <description>SICKBEARD/COUCHPOTATO ICON</description>
@@ -806,6 +804,7 @@
          <width>128</width>
          <height>128</height>
          <aspectratio>keep</aspectratio>
+         <visible>!Control.IsVisible(2)</visible>
       </control>
       <control type="image" id="512">
          <description>NEW ICON</description>
@@ -813,6 +812,7 @@
          <posy>80</posy>
          <width>143</width>
          <height>145</height>
+         <visible>!Control.IsVisible(2)</visible>
       </control>
       <!-- DESCRIPTION INFO PANEL -->
       <control type="label" id="500">
@@ -895,8 +895,8 @@
          <textcolor>C0C0C0C0</textcolor>
          <scroll>True</scroll>
          <autoscroll time="1000" delay="1000" repeat="2000">True</autoscroll>
-         <scrollsuffix>•  •  •  •  •</scrollsuffix>
-         <label>[B]$INFO[Window(weather).Property(Current.Location)] Current Conditions[/B]   $INFO[Window(weather).Property(Current.Condition)]  $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   Feels Like $INFO[Window(weather).Property(Current.FeelsLike)]   Wind $INFO[Window(weather).Property(Current.Wind)]   Wind chill $INFO[Window(weather).Property(Current.WindChill)]$INFO[System.TemperatureUnits]   Humidity $INFO[Window(weather).Property(Current.Humidity)]   Visibility $INFO[Window(weather).Property(Current.Visibility)]   Sunrise $INFO[Window(weather).Property(Today.Sunrise)]   Sunset $INFO[Window(weather).Property(Today.Sunset)]   •   [B]3 Day Extended Forecast[/B]   •   [B]$INFO[Window(weather).Property(Day1.Title)][/B]   High $INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day1.Outlook)]   •   [B]$INFO[Window(weather).Property(Day2.Title)][/B]   High $INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day2.Outlook)]   •   [B]$INFO[Window(weather).Property(Day3.Title)][/B]   High $INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day3.Outlook)]</label>
+         <scrollsuffix>- - - - -</scrollsuffix>
+         <label>[B]$INFO[Window(weather).Property(Current.Location)] Current Conditions[/B]   $INFO[Window(weather).Property(Current.Condition)]  $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   Feels Like $INFO[Window(weather).Property(Current.FeelsLike)]   Wind $INFO[Window(weather).Property(Current.Wind)]   Wind chill $INFO[Window(weather).Property(Current.WindChill)]$INFO[System.TemperatureUnits]   Humidity $INFO[Window(weather).Property(Current.Humidity)]   Visibility $INFO[Window(weather).Property(Current.Visibility)]   Sunrise $INFO[Window(weather).Property(Today.Sunrise)]   Sunset $INFO[Window(weather).Property(Today.Sunset)]   Õ   [B]3 Day Extended Forecast[/B]   Õ   [B]$INFO[Window(weather).Property(Day1.Title)][/B]   High $INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day1.Outlook)]   Õ   [B]$INFO[Window(weather).Property(Day2.Title)][/B]   High $INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day2.Outlook)]   Õ   [B]$INFO[Window(weather).Property(Day3.Title)][/B]   High $INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day3.Outlook)]</label>
          <font>font13</font>
          <align>center</align>
          <aligny>center</aligny>
