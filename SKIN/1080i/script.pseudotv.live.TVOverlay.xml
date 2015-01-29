@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- https://github.com/CodeMonkeyZero -->
 <window>
    <allowoverlay>no</allowoverlay>
@@ -121,7 +121,7 @@
                <scroll>true</scroll>
                <wrapmultiline>false</wrapmultiline>
                <scrollspeed>50</scrollspeed>
-               <scrollsuffix>-</scrollsuffix>
+               <scrollsuffix> ж </scrollsuffix>
             </control>
             <control type="label">
                <description>SHOWTITLE SEP LABEL</description>
@@ -303,7 +303,7 @@
                <align>center</align>
                <visible>Control.IsVisible(515)</visible>
                <textcolor>C0C0C0C0</textcolor>
-               <label>MEMORY [B]$INFO[System.FreeMemory][/B] FREE   ՠ  [B]$INFO[System.CoreUsage(0)]%[/B] CPU</label>
+               <label>MEMORY [B]$INFO[System.FreeMemory][/B] FREE   •  [B]$INFO[System.CoreUsage(0)]%[/B] CPU</label>
             </control>
          </control>
       </control>

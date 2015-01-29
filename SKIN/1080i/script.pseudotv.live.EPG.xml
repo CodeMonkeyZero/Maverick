@@ -1,6 +1,4 @@
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- https://github.com/CodeMonkeyZero -->
 <window>
    <allowoverlay>no</allowoverlay>
@@ -901,8 +899,8 @@
          <textcolor>C0C0C0C0</textcolor>
          <scroll>True</scroll>
          <autoscroll time="1000" delay="1000" repeat="2000">True</autoscroll>
-         <scrollsuffix>  - - -  </scrollsuffix>
-         <label>[B]$INFO[Window(weather).Property(Current.Location)] Current Conditions[/B]   $INFO[Window(weather).Property(Current.Condition)]  $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   Feels Like $INFO[Window(weather).Property(Current.FeelsLike)]   Wind $INFO[Window(weather).Property(Current.Wind)]   Wind chill $INFO[Window(weather).Property(Current.WindChill)]$INFO[System.TemperatureUnits]   Humidity $INFO[Window(weather).Property(Current.Humidity)]   Visibility $INFO[Window(weather).Property(Current.Visibility)]   Sunrise $INFO[Window(weather).Property(Today.Sunrise)]   Sunset $INFO[Window(weather).Property(Today.Sunset)]   ՠ  [B]3 Day Extended Forecast[/B]   ՠ  [B]$INFO[Window(weather).Property(Day1.Title)][/B]   High $INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day1.Outlook)]   ՠ  [B]$INFO[Window(weather).Property(Day2.Title)][/B]   High $INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day2.Outlook)]   ՠ  [B]$INFO[Window(weather).Property(Day3.Title)][/B]   High $INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day3.Outlook)]</label>
+         <scrollsuffix>   • • • • •   </scrollsuffix>
+         <label>[COLOR=FFFFFFFF][B]$INFO[Window(weather).Property(Current.Location)] Current Conditions[/B][/COLOR]   $INFO[Window(weather).Property(Current.Condition)]  $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]   Feels Like $INFO[Window(weather).Property(Current.FeelsLike)]   Wind $INFO[Window(weather).Property(Current.Wind)]   Wind chill $INFO[Window(weather).Property(Current.WindChill)]$INFO[System.TemperatureUnits]   Humidity $INFO[Window(weather).Property(Current.Humidity)]   Visibility $INFO[Window(weather).Property(Current.Visibility)]   Sunrise $INFO[Window(weather).Property(Today.Sunrise)]   Sunset $INFO[Window(weather).Property(Today.Sunset)]   •  [COLOR=FFFFFFFF][B]3 Day Extended Forecast[/B][/COLOR]   •  [COLOR=FFFFFFFF][B]$INFO[Window(weather).Property(Day1.Title)][/B][/COLOR]   High $INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day1.Outlook)]   •  [COLOR=FFFFFFFF][B]$INFO[Window(weather).Property(Day2.Title)][/B][/COLOR]   High $INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day2.Outlook)]   •  [COLOR=FFFFFFFF][B]$INFO[Window(weather).Property(Day3.Title)][/B][/COLOR]   High $INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]   Low $INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]   $INFO[Window(weather).Property(Day3.Outlook)]</label>
          <font>font13</font>
          <align>center</align>
          <aligny>center</aligny>
