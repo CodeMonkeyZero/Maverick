@@ -73,6 +73,10 @@
                <aspectratio>stretch</aspectratio>
             </control>
          </control>
+         <control type="button" id="509" />
+         <control type="image" id="510">
+            <visible>false</visible>
+         </control>
          <control type="image" id="511">
             <description>SICKBEARD/COUCHPOTATO ICON</description>
             <posx>20</posx>
@@ -123,7 +127,7 @@
                <description>SHOWTITLE SEP LABEL</description>
                <width>10</width>
                <height>30</height>
-               <label>•</label>
+               <label>-</label>
                <font>font14</font>
                <visible>!IsEmpty(Control.GetLabel(504))</visible>
                <textcolor>FF0297eb</textcolor>
@@ -261,7 +265,7 @@
                <aligny>bottom</aligny>
                <visible>Control.IsVisible(515)</visible>
                <textcolor>FF0297eb</textcolor>
-               <label>[B]  •  $INFO[VideoPlayer.TimeRemaining(hh:mm:ss),,][/B]</label>
+               <label>[B]  Õ  $INFO[VideoPlayer.TimeRemaining(hh:mm:ss),,][/B]</label>
             </control>
             <control type="label">
                <posx>20</posx>
@@ -299,7 +303,7 @@
                <align>center</align>
                <visible>Control.IsVisible(515)</visible>
                <textcolor>C0C0C0C0</textcolor>
-               <label>MEMORY [B]$INFO[System.FreeMemory][/B] FREE   •   [B]$INFO[System.CoreUsage(0)]%[/B] CPU</label>
+               <label>MEMORY [B]$INFO[System.FreeMemory][/B] FREE   Õ   [B]$INFO[System.CoreUsage(0)]%[/B] CPU</label>
             </control>
          </control>
       </control>
